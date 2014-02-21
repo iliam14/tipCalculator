@@ -33,7 +33,7 @@ public class TipCalculatorActivity extends Activity {
 				}
 				
 				
-				String tipStr = "Tip: $" + tipAmnt;
+				String tipStr = "Tip: $" + String.format("%.2f", tipAmnt);
 				txtTipResult.setText(tipStr);
 				
 				
