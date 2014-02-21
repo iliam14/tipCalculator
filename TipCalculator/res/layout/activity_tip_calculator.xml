@@ -8,16 +8,20 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".TipCalculatorActivity" >
 
-        <TextView 
-        android:id="@+id/txtBill"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/bill_line"/>	
+	<TextView
+	    android:id="@+id/txtBill"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/edtBillAmount"
+	    android:textStyle="bold"
+	    android:paddingRight="15dp"
+	    android:text="@string/bill_line" />
     
     <EditText 
         android:id="@+id/edtBillAmount"
         android:layout_toRightOf="@+id/txtBill"
         android:inputType="text" 
+        android:textSize="12sp"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         />
@@ -41,9 +45,6 @@
         android:id="@+id/txtTipResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingTop="70dp"
         android:layout_below="@+id/btnCalculate"/>
-
-"
-    
-
 </RelativeLayout>
